@@ -9,7 +9,7 @@
     </div>
     <div id="navButtonWrapper">
       <router-link to="/todo" class="nav-btn">
-        Todo
+        Todo List
       </router-link>
       <router-link to="/featureB" class="nav-btn">
         Posts
@@ -57,7 +57,7 @@ export default {
 #navButtonWrapper {
   flex-grow: 1;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .scroll-snap-align-nav {
