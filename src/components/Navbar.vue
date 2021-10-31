@@ -1,5 +1,5 @@
 <template>
-  <div id="nav">
+  <div id="nav" v-bind:class="{ 'scroll-snap-align-nav': $route.path == '/' }">
     <div id="navAvatarWrapper">
       <img
         id="navAvatar"
@@ -29,7 +29,6 @@ export default {
 
 <style scoped>
 #nav {
-  scroll-snap-align: start;
   padding: 10px;
   font-size: 1.5em;
   display: flex;
@@ -59,6 +58,10 @@ export default {
   flex-grow: 1;
   display: flex;
   justify-content: end;
+}
+
+.scroll-snap-align-nav {
+  scroll-snap-align: start;
 }
 
 .nav-btn {

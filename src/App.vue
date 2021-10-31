@@ -32,6 +32,6 @@ export default {
 }
 
 .container {
-  scroll-snap-align: start;
+  padding: 50px;
 }
 </style>
